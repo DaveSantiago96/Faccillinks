@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #33333348;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.header img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+html,
+body {
+
+  height: 100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+
+}
+
+body{
+  background-image: url(/assets/fundo-abstrato-com-linhas-vermelhas.jpg);
+}
+
+
+main {
+  border: 3px solid #fafafa;
+  background: url(assets/Fundo.png);
+  background-size: cover;
+  position:relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: gray;
+}
+
+
+div p {
+  display: flex;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  color: #fff;
+  margin: 20px;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 70px;
+}
+
+.icons a {
+  margin: 0 10px;
+}
+
+.icons i {
+  font-size: 40px;
+  color: #ebe0e0;
+}
+
+
+.icons i:hover {
+  transform: translateY(-15px);
+}
+
+.bus {
+  height: 100%; 
+  margin: -40px;
+  margin-left: 0;
+  
+}
+
+.bus img {
+  align-self: center;
+  height: 100px;
+  width: auto;
+  margin: 0;
+  position: relative;
+  animation-name: move;animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  
+}
+  @keyframes move {
+    from {
+      left: -200px;
+    }
+    to {
+      left: 0px;
+    }
+  }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto; 
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+
+}
+
+
+
+/*Responsivo*/
+
+
+@media (min-width: 425px) {
+  body {
+    background-size: cover;
+    background-size: 100%;
+  }
+ 
+}
+@media (min-width: 768px) {
+  
+  body {
+    background-size: cover;
+    background-size: 100%;
+  }
+ main {
+  background:url("assets/fundo1.jfif")#202024;
+  background-size: cover;
+   width: 320px;
+   height: 626px;
+   align-items: center;
+   
+ }
+ 
+
+
+.container {
+  max-width: 264px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  color: var(--gray);
+}
+
+
+}
